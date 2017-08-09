@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   root to: 'restaurants#index'
 
   namespace :admin do
-    resources :restaurants, only: [:index, :destroy]
+    resources :restaurants, only: [:edit, :update, :index, :destroy]
   end
 end

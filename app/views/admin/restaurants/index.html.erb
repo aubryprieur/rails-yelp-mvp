@@ -12,7 +12,11 @@
 
         <%= link_to "Delete", admin_restaurant_path(restaurant),
             method: :delete,
-            data: { confirm: "Are you sure?" } %>
+            data: { confirm: "Are you sure?" }, class: "btn btn-primary" %>
+
+                <div>
+  <%= link_to "edit", edit_admin_restaurant_path(restaurant), class: "btn btn-primary" %>
+</div>
 
       <% end %>
     </div>
